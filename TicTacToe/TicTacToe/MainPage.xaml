@@ -8,7 +8,7 @@
     </ContentPage.BindingContext>
 
     <Grid ColumnDefinitions="*, *, *"
-          RowDefinitions="*, *, *">
+          RowDefinitions="*, *, *, *">
 
         <Button x:Name="b1"
                 Grid.Column="0"
@@ -64,6 +64,10 @@
                 Margin="5"
                 Command="{Binding MarkCellCommand}"
                 CommandParameter="{x:Reference b9}"/>
-    
+        <Label Text="{Binding Announcement}"
+               Grid.Column="0"
+               Grid.Row="3"
+               Grid.ColumnSpan="3"
+               FontSize="60"/>
     </Grid>
 </ContentPage>
